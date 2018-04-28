@@ -1,0 +1,28 @@
+.site-footer {
+    // box model
+    padding: 10px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__socials {
+        // box model
+        padding-top: 5px;
+    }
+    
+    &__rules {
+        
+        a {
+            // typography
+            text-decoration: none;
+            color: #333;
+        }
+    }
+
+    &__copyright {
+        
+        p {
+            // typography
+            color: #AAAAAA
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "taglife",
+  "version": "1.0.0",
+  "description": "web pages for taglife",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Vereschagin_DA@bitbucket.org/TagLifeDevelopment/taglife-webpages.git"
+  },
+  "author": "Daniil Vereschagin",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/TagLifeDevelopment/taglife-webpages#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug2": "0.0.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0",
+    "sass-module-importer": "^1.4.0"
+  }
+}
