@@ -12,7 +12,11 @@
   .site-footer__socials {
     padding-top: 5px; }
   .site-footer__rules a {
+    font-family: "Roboto";
+    font-weight: 400;
     text-decoration: none;
     color: #333; }
   .site-footer__copyright p {
+    font-family: "Roboto";
+    font-weight: 400;
     color: #AAAAAA; }
