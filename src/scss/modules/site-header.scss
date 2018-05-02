@@ -1,0 +1,19 @@
+.site-header {
+    // box model
+    margin-top: 45px;
+    padding: 0 60px;
+    
+    &__title {
+        // box model
+        margin: 0;
+
+        // typography
+        font-family: "Roboto";
+        color: "#333333";
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        
+
+    }
+}
