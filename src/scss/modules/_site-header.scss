@@ -4,16 +4,18 @@
     padding: 0 60px;
     
     &__title {
+        // mixins
+        @include atSmall {
+            font-size: 0.875rem;
+        }
         // box model
         margin: 0;
 
         // typography
         font-family: "Roboto";
-        color: "#333333";
+        color: $dark;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 1.125rem;
         text-align: center;
-        
-
     }
 }

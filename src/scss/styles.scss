@@ -1,7 +1,9 @@
 @import "base/vars";
 @import "base/globals";
+@import "base/mixins";
 
-@import "modules/site-header";
-@import "modules/logo";
-@import "modules/site-main";
-@import "modules/site-footer";
+@import "modules/_wrapper";
+@import "modules/_site-header";
+@import "modules/_logo";
+@import "modules/_site-main";
+@import "modules/_site-footer";

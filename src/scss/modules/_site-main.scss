@@ -5,9 +5,11 @@
     &__img {
         // box model
         padding: 0 20px;
-
+        width: 305px;
+        
         img {
             width: 100%;
+            height: 100%;
         }
     }
 
