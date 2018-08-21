@@ -6,21 +6,48 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title TagLife
         link(href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet")
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         link(rel="stylesheet", href="styles.css")
     body
-        .wrapper
-            .content
+        .hero.gradient
+            .wrapper
                 header.site-header
-                    .logo: img(src="./img/logo.png" alt="логотип TagLife")
-                    h1.site-header__title Collect moments of Life
-
-                main.site-main
-                    .site-main__content
-                        .site-main__img: img(src="./img/phones.png" alt="TagLife iphones")
-                        .site-main__label
-                            a(href="#"): img(src="./img/appstoresvg.svg" alt="TagLife appstore")
+                    h2.site-header__title TagLife
+                .hero__description
+                    h1.hero__text Это библиотека воспоминаний, которая позволит вам делиться ежедневными мелочами, не теряя важнейшие моменты.
+                a(href="https://itunes.apple.com/us/app/taglife/id1378195365?l=ru&ls=1&mt=8").appstore: img.appstore__img(src="appstore.svg")
                 
-            footer.site-footer
-                a(href="https://vk.com/taglife_official"): img.site-footer__socials--vk(src="./img/vk.svg" alt="vk")
-                .site-footer__rules: a(href="#") Правила
-                .site-footer__copyright: p TagLife © 2018
+        main.lifeline
+            .wrapper
+                .lifeline__container
+                    .lifeline__img: img(src="phone_profile.png")
+                    .lifeline__description
+                        h3.lifeline__title Что такое <span>Life</span>Line?
+                        p.lifeline__text Это система распределения записей, где <span>День</span> - это приятные мелочи, а <span>Жизнь</span> - важнейшие события.
+
+        .download.gradient
+            .wrapper
+                .download__container
+                    .download__right
+                        .download__img: img(src="phone_home.png")
+                    .download__left
+                        p.download__text Начни коллекционировать воспоминания!
+                        a(href="https://itunes.apple.com/us/app/taglife/id1378195365?l=ru&ls=1&mt=8").download__img.download__img--appstore: img(src="download_appstore.svg")
+
+        footer.site-footer
+            .wrapper
+                .site-footer__about
+                    .site-footer__logo: img(src="taglifeLogo.svg")
+                    p.site-footer__motto Collect moments of Life!
+                
+                .site-footer__bottom
+                    .site-footer__socials
+                        a(href="https://vk.com/taglife_official").socials.socials--yb: img(src="youtube.svg")
+                        .socials.socials--vk: img(src="vk.svg")
+                    a(href="https://taglife.ru/rules").site-footer__rules Правила
+
+                p.site-footer__copyright TagLife @ 2018
+
+
+
+

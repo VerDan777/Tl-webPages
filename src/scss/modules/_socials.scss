@@ -1,0 +1,11 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+
+    &--yb {
+        padding-right: 38px;
+    }
+    &--vk {
+        padding-right: 38px;
+    }
+}

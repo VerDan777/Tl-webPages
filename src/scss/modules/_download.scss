@@ -1,0 +1,28 @@
+.download {
+    &__container {
+    }    
+    &__right {
+        // box model
+    }
+    &__img {
+        // box model
+        
+        // margin-top: -50px;
+        &--appstore {
+            display: inline-block;
+            width: 200px;
+            padding-bottom: 50px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-weight: 900;
+        font-size: 1.75rem;
+    }
+}

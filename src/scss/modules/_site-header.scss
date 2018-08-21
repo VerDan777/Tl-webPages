@@ -1,21 +1,18 @@
 .site-header {
     // box model
-    margin-top: 45px;
-    padding: 0 60px;
-    
+    padding-top: 102px;
+
     &__title {
-        // mixins
-        @include atSmall {
-            font-size: 0.875rem;
-        }
         // box model
         margin: 0;
+        padding-bottom: 24px;
 
         // typography
         font-family: "Roboto";
-        color: $dark;
+        font-weight: 900;
+
+        color: $white;
         font-weight: 400;
-        font-size: 1.125rem;
-        text-align: center;
+        font-size: 4.125rem;
     }
 }

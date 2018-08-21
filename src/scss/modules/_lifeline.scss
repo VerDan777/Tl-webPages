@@ -1,0 +1,35 @@
+.lifeline {
+    // box model
+    &__description {
+        padding-bottom: 45px;
+    }
+
+    &__title {
+        color: #333333;
+        font-size: 1.75rem;
+        font-family: "Montserrat";
+        font-weight: 700;
+
+        span {
+            color: #12CCC4;
+        }
+    }
+    &__text {
+        color: #333333;
+        font-size: 1.3215rem;
+        font-family: "Montserrat";
+        font-weight: 600;
+        span {
+            color: #12CCC4;
+        }
+    }
+    
+    &__img {
+        // box model
+        margin-top: -100px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
