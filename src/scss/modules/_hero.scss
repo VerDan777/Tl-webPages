@@ -2,14 +2,26 @@
     &__description {
         // box model
         padding-bottom: 26px;
+        @include atDesktop {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 0;
+        }
     }
 
     &__text {
         margin: 0;
         padding-right: 10px;
         color: $white;
+        line-height: 1.5;
         font-size: 1.5rem;
         font-family: "Montserrat";
         font-weight: 400;
+
+        @include atDesktop {
+            font-weight: 900;
+            font-size: 2.5rem;
+            padding-bottom: 200px;
+        }
     }
 }

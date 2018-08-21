@@ -1,21 +1,51 @@
 .download {
     &__container {
+        @include atDesktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
     }    
     &__right {
         // box model
+        order: 1;
+    }
+    &__left {
+
+        @include atDesktop {
+            padding-right: 26px;
+        }
     }
     &__img {
         // box model
         
+        @include atTabletsPortrait {
+            width: auto;
+            display: flex;
+            justify-content: center;
+        }
+
         // margin-top: -50px;
         &--appstore {
             display: inline-block;
             width: 200px;
             padding-bottom: 50px;
+
+            
+
+
+            @include atDesktop {
+                display: block;
+                margin-left: auto;
+            }
         }
 
         img {
             width: 100%;
+            @include atTabletsPortrait {
+                width: auto;
+            }
         }
     }
 
@@ -24,5 +54,15 @@
         font-family: "Montserrat";
         font-weight: 900;
         font-size: 1.75rem;
+
+        @include atTabletsPortrait {
+            width: 400px;
+        }
+
+        @include atDesktop {
+            font-size: 2.3125rem;
+            width: auto;
+            text-align: right;
+        }
     }
 }

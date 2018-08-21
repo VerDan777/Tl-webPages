@@ -2,6 +2,14 @@
     // box model
     padding-top: 102px;
 
+    @include atDesktop {
+        // box model
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 140px;
+    }
+
     &__title {
         // box model
         margin: 0;
@@ -14,5 +22,15 @@
         color: $white;
         font-weight: 400;
         font-size: 4.125rem;
+    }
+
+    &__img {
+        // box model
+        display: none;
+
+        @include atDesktop {
+            display: block;
+            width: 200px;
+        }
     }
 }

@@ -1,9 +1,21 @@
 .site-footer {
     // box model
     padding: 50px 0;
+
+    @include atDesktop {
+        padding: 32px 0;
+    }
     // display: flex;
     // align-items: center;
     // justify-content: space-between;
+
+    &__about {
+        @include atDesktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
     
     &__rules {
         
@@ -21,10 +33,14 @@
         font-size: 1.25rem;
         font-family: "Montserrat";
         font-weight: 500;
+
+        @include atDesktop {
+            padding-bottom: 5px;
+        }
     }
 
     &__copyright {
-        padding-left: 10px;
+        // padding-left: 10px;
 
         margin: 0;
         // typography
@@ -35,7 +51,11 @@
 
     &__logo {
         width: 134px;
-        margin-left: -10px;
+        margin-left: -8px;
+
+        @include atDesktop {
+            margin-right: 35px
+        }
     }
 
     &__socials {
@@ -53,5 +73,28 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+
+        @include atTabletsPortrait {
+            padding-right: 10px;
+        }
+
+        @include atDesktop {
+            padding-right: 36px;
+        }
+    }
+
+    &__wrapper {
+        padding: 0 20px;
+
+        @include atTabletsPortrait {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        @include atDesktop {
+            padding: 0 36px;
+        }
     }
 }

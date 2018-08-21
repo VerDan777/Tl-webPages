@@ -4,11 +4,24 @@
         padding-bottom: 45px;
     }
 
+    &__container {
+        @include atDesktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
     &__title {
         color: #333333;
         font-size: 1.75rem;
         font-family: "Montserrat";
         font-weight: 700;
+
+        @include atDesktop {
+            font-size: 2.3125rem;
+            font-weight: 900;
+        }
 
         span {
             color: #12CCC4;
@@ -19,6 +32,11 @@
         font-size: 1.3215rem;
         font-family: "Montserrat";
         font-weight: 600;
+
+        @include atDesktop {
+            font-size: 1.625rem;
+        }
+
         span {
             color: #12CCC4;
         }
@@ -28,8 +46,28 @@
         // box model
         margin-top: -100px;
 
+        @include atTabletsPortrait {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        @include atDesktop {
+            display: block;
+            margin: 0;
+            padding-right: 114px;
+        }
+
         img {
             width: 100%;
+
+            @include atTabletsPortrait {
+                width: auto;
+            }
+
+            @include atDesktop {
+                width: 340px;
+            }
         }
     }
 }
