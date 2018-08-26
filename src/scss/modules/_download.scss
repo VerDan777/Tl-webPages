@@ -22,29 +22,45 @@
         
         @include atTabletsPortrait {
             width: auto;
-            display: flex;
-            justify-content: center;
         }
 
         // margin-top: -50px;
         &--appstore {
-            display: inline-block;
+            display: block;
             width: 200px;
-            padding-bottom: 50px;
+            padding-top: 50px;
 
-            
-
+            @include atTabletsPortrait {
+                padding-top: 0;
+            }
 
             @include atDesktop {
                 display: block;
                 margin-left: auto;
             }
+
+            img {
+                display: block;
+                margin-left: auto;
+                width: 200px !important;
+                padding-bottom: 50px;
+            }
         }
 
         img {
             width: 100%;
+            margin-top: -105px;
+
             @include atTabletsPortrait {
-                width: auto;
+                width: 100%;
+                margin: 0;
+            }
+
+            @include atDesktop {
+                width: 340px;
+                display: block;
+                text-align: right;
+                margin-left: auto;
             }
         }
     }
@@ -54,9 +70,11 @@
         font-family: "Montserrat";
         font-weight: 900;
         font-size: 1.75rem;
+        margin-bottom: 70px;
 
         @include atTabletsPortrait {
             width: 400px;
+            margin-bottom: 37px;
         }
 
         @include atDesktop {

@@ -1,7 +1,12 @@
 .lifeline {
     // box model
     &__description {
-        padding-bottom: 45px;
+        padding-bottom: 100px;
+
+        @include atTabletsPortrait {
+            // box model
+            padding-bottom: 45px;
+        }
     }
 
     &__container {
@@ -48,8 +53,8 @@
 
         @include atTabletsPortrait {
             margin: 0;
-            display: flex;
-            justify-content: center;
+            // display: flex;
+            // justify-content: center;
         }
 
         @include atDesktop {
@@ -60,10 +65,6 @@
 
         img {
             width: 100%;
-
-            @include atTabletsPortrait {
-                width: auto;
-            }
 
             @include atDesktop {
                 width: 340px;

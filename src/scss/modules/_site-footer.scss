@@ -20,11 +20,12 @@
     &__rules {
         
         // typography
-        font-family: "Monserrat";
+        font-family: "Montserrat";
         font-weight: 500;
         font-size: 1.25rem;
         text-decoration: none;
         color: #333;
+        padding-right: 36px;
     }
 
     &__motto {
@@ -73,6 +74,7 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+        flex-wrap: wrap;
 
         @include atTabletsPortrait {
             padding-right: 10px;
