@@ -62,7 +62,10 @@ body {
   background: linear-gradient(45deg, #12CDC4 10%, #4183D7); }
 
 .lifeline__description {
-  padding-bottom: 45px; }
+  padding-bottom: 100px; }
+  @media (min-width: 700px) {
+    .lifeline__description {
+      padding-bottom: 45px; } }
 
 @media (min-width: 1200px) {
   .lifeline__container {
@@ -104,13 +107,7 @@ body {
   margin-top: -100px; }
   @media (min-width: 700px) {
     .lifeline__img {
-      margin: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+      margin: 0; } }
   @media (min-width: 1200px) {
     .lifeline__img {
       display: block;
@@ -118,9 +115,6 @@ body {
       padding-right: 114px; } }
   .lifeline__img img {
     width: 100%; }
-    @media (min-width: 700px) {
-      .lifeline__img img {
-        width: auto; } }
     @media (min-width: 1200px) {
       .lifeline__img img {
         width: 340px; } }
@@ -152,37 +146,49 @@ body {
 
 @media (min-width: 700px) {
   .download__img {
-    width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
+    width: auto; } }
 
 .download__img--appstore {
-  display: inline-block;
+  display: block;
   width: 200px;
-  padding-bottom: 50px; }
+  padding-top: 50px; }
+  @media (min-width: 700px) {
+    .download__img--appstore {
+      padding-top: 0; } }
   @media (min-width: 1200px) {
     .download__img--appstore {
       display: block;
       margin-left: auto; } }
+  .download__img--appstore img {
+    display: block;
+    margin-left: auto;
+    width: 200px !important;
+    padding-bottom: 50px; }
 
 .download__img img {
-  width: 100%; }
+  width: 100%;
+  margin-top: -105px; }
   @media (min-width: 700px) {
     .download__img img {
-      width: auto; } }
+      width: 100%;
+      margin: 0; } }
+  @media (min-width: 1200px) {
+    .download__img img {
+      width: 340px;
+      display: block;
+      text-align: right;
+      margin-left: auto; } }
 
 .download__text {
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: 900;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  margin-bottom: 70px; }
   @media (min-width: 700px) {
     .download__text {
-      width: 400px; } }
+      width: 400px;
+      margin-bottom: 37px; } }
   @media (min-width: 1200px) {
     .download__text {
       font-size: 2.3125rem;
@@ -278,11 +284,12 @@ body {
           -ms-flex-align: center;
               align-items: center; } }
   .site-footer__rules {
-    font-family: "Monserrat";
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 1.25rem;
     text-decoration: none;
-    color: #333; }
+    color: #333;
+    padding-right: 36px; }
   .site-footer__motto {
     margin: 0;
     color: #333333;
@@ -325,7 +332,9 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     @media (min-width: 700px) {
       .site-footer__bottom {
         padding-right: 10px; } }
