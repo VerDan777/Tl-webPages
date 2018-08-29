@@ -20,7 +20,7 @@
     &__title {
         color: #333333;
         font-size: 1.75rem;
-        font-family: "Montserrat";
+        font-family: $montSerrat;
         font-weight: 700;
 
         @include atDesktop {
@@ -35,7 +35,7 @@
     &__text {
         color: #333333;
         font-size: 1.3215rem;
-        font-family: "Montserrat";
+        font-family: $montSerrat;
         font-weight: 600;
 
         @include atDesktop {

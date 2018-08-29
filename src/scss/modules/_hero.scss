@@ -15,7 +15,7 @@
         color: $white;
         line-height: 1.5;
         font-size: 1.5rem;
-        font-family: "Montserrat";
+        font-family: $montSerrat;
         font-weight: 400;
 
         @include atDesktop {
