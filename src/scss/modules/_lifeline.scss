@@ -1,7 +1,7 @@
 .lifeline {
     // box model
     &__description {
-        padding-bottom: 100px;
+        padding-bottom: 125px;
 
         @include atTabletsPortrait {
             // box model
@@ -10,14 +10,20 @@
     }
 
     &__container {
-        @include atDesktop {
+
+        @include atTabletsPortrait {
             display: flex;
             flex-direction: row;
             align-items: center;
         }
+        
+        @include atDesktop {
+            padding: 36px 0;
+        }
     }
 
     &__title {
+        margin: 16px 0;
         color: #333333;
         font-size: 1.75rem;
         font-family: $montSerrat;
@@ -25,7 +31,6 @@
 
         @include atDesktop {
             font-size: 2.3125rem;
-            font-weight: 900;
         }
 
         span {
@@ -33,10 +38,16 @@
         }
     }
     &__text {
+        margin: 0;
         color: #333333;
         font-size: 1.3215rem;
         font-family: $montSerrat;
         font-weight: 600;
+
+
+        @include atSmall {
+            font-size: 1.4rem;
+        }
 
         @include atDesktop {
             font-size: 1.625rem;
@@ -67,7 +78,7 @@
             width: 100%;
 
             @include atDesktop {
-                width: 340px;
+                width: 440px;
             }
         }
     }

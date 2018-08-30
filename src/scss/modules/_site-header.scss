@@ -1,26 +1,26 @@
 .site-header {
     // box model
-    padding-top: 102px;
+    padding-top: 50px;
 
     @include atDesktop {
         // box model
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding-bottom: 140px;
     }
 
     &__title {
         // box model
         margin: 0;
-        padding-bottom: 24px;
+        padding-bottom: 12px;
 
         // typography
         font-family: "Roboto";
-        font-weight: 900;
 
         color: $white;
-        font-weight: 400;
+        font-weight: 900;
         font-size: 4.125rem;
     }
 

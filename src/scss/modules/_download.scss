@@ -1,10 +1,15 @@
 .download {
     &__container {
-        @include atDesktop {
+
+        @include atTabletsPortrait {
             display: flex;
-            flex-direction: row;
             align-items: center;
+            justify-content: flex-end;
+        }
+        
+        @include atDesktop {
             justify-content: space-between;
+            padding: 36px 0;
         }
     }    
     &__right {
@@ -12,7 +17,14 @@
         order: 1;
     }
     &__left {
-
+        @include atTabletsPortrait {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        
         @include atDesktop {
             padding-right: 26px;
         }
@@ -52,12 +64,14 @@
             margin-top: -105px;
 
             @include atTabletsPortrait {
-                width: 100%;
                 margin: 0;
+                text-align: right;
+                margin-left: auto;
+                max-width: 414px;
             }
 
             @include atDesktop {
-                width: 340px;
+                width: 440px;
                 display: block;
                 text-align: right;
                 margin-left: auto;
@@ -66,15 +80,22 @@
     }
 
     &__text {
+        margin-top: 0;
+
         color: #ffffff;
         font-family: $montSerrat;
-        font-weight: 900;
+        font-weight: 700;
         font-size: 1.75rem;
         margin-bottom: 70px;
+
+        @include atSmall {
+            font-size: 1.6rem;
+        }
 
         @include atTabletsPortrait {
             width: 400px;
             margin-bottom: 37px;
+            font-size: 2rem;
         }
 
         @include atDesktop {

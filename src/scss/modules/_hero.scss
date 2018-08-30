@@ -1,4 +1,7 @@
 .hero {
+    // box model
+    height: 600px;
+
     &__description {
         // box model
         padding-bottom: 26px;
@@ -16,12 +19,26 @@
         line-height: 1.5;
         font-size: 1.5rem;
         font-family: $montSerrat;
-        font-weight: 400;
+        font-weight: 700;
+
+        @include atSmall {
+            font-size: 1.4rem;
+        }
+
+        @include atMobileLarge {
+            font-size: 2rem;
+        }
+
+        // @include atTabletsPortrait {
+        //     font-size: 1.5rem;
+        // }
 
         @include atDesktop {
             font-weight: 900;
             font-size: 2.5rem;
             padding-bottom: 200px;
+            text-align: center;
         }
+
     }
 }
