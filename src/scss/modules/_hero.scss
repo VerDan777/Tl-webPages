@@ -29,12 +29,7 @@
             font-size: 2rem;
         }
 
-        // @include atTabletsPortrait {
-        //     font-size: 1.5rem;
-        // }
-
         @include atDesktop {
-            font-weight: 900;
             font-size: 2.5rem;
             padding-bottom: 200px;
             text-align: center;
